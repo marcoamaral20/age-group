@@ -37,8 +37,6 @@ acima de 51 anos:
 
 # NOME DO PROJETO (a definir)
 
-<h1 FRASE DE IMPACTO (a definir) </h1>
-
 ### Caixas de Diálogo
 
 - [ ] Prompt
