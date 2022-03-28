@@ -2,7 +2,7 @@
 
 # INFORMAÇÕES POR FAIXA ETÁRIA
  
-Páis de crianças com - de 6 anos:
+entre 7 à 12 anos: 
 
      SAÚDE : 
      GERAL:
@@ -10,20 +10,12 @@ Páis de crianças com - de 6 anos:
      RECOMENDAÇÕES :  
      MAIS :
 
-entre 7 à 12 anos: 
+entre 13 à 18 anos:
 
-entre 13 à 16 anos:
+entre 19 à 30 anos:
 
-entre 17 à 20 anos:
-
-entre 21 à 25 anos:
+entre 31 à 50 anos:
  
-entre 26 à 30 anos:
-
-entre 31 à 40 anos:
-
-entre 41 à 50 anos:
-
 acima de 51 anos:
 
 --------------------------------------------------------------------------------------------
