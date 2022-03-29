@@ -1,5 +1,10 @@
 ### PROJETO WEB 2 ###				
 
+Link para o wireframe do projeto:
+
+### https://www.figma.com/file/vlQ6zKJ7cAONsLq38lpQKU/M.Jore)?node-id=8%3A33
+
+
 # INFORMAÇÕES POR FAIXA ETÁRIA
  
 entre 7 à 12 anos: 
