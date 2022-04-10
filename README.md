@@ -19,9 +19,9 @@ entre 13 à 18 anos:
 
 entre 19 à 30 anos:
 
-entre 31 à 50 anos:
+entre 31 à 55 anos:
  
-acima de 61 anos:
+acima de 56 anos:
 
 --------------------------------------------------------------------------------------------
 ### Funcionalidades do site ###
