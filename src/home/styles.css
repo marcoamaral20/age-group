@@ -108,6 +108,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 100px;
 }
 
 .age-group .link-img span {
