@@ -11,3 +11,8 @@ document.querySelectorAll('.select-group-button').forEach(button => {
         }
     })
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+  });

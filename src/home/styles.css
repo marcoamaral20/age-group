@@ -61,6 +61,17 @@ section .title h1 {
     font-family: 'Cagliostro', sans-serif;
     font-size: 6rem;
     text-shadow: 4px 3px 3px rgb(89, 87, 87);
+    animation:1s ease 1s normal forwards 1 fadein;
+    -webkit-animation:1s ease 1s normal forwards 1 fadein;
+    opacity:0
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
 }
 
 a {
@@ -108,13 +119,15 @@ p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 100px;
+    
 }
 
 .age-group .link-img span {
    justify-content: center;
    display: flex;
    align-items: center;
+   color: #817d7d;
+
 } 
 .age-group .link-img img {
     width: 8vw;
@@ -125,4 +138,5 @@ p {
 
 .age-group .link-img:hover {
     opacity: 70%;
+    color: #000000;
 }
