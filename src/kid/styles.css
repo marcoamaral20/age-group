@@ -2,10 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 a {
     text-decoration: none;
+}
+body::before {
+    content: '';    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(10deg, #94E85A, #FFD970);
+    clip-path: circle(17% at left 40%);
+}
+body::after {
+    content: '';    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+    background: linear-gradient(10deg, #EB1630, #CC63FF);
+    clip-path: circle(15% at right 80%);
 }
 
 .age-group {
@@ -31,6 +51,7 @@ a {
 }
 .select-group-button {
     position: absolute;
+    z-index: 1;
     top: 0; 
     margin: 0;
     display: block;
@@ -39,7 +60,7 @@ a {
     border: none;
     outline: none;
     cursor: pointer;
-    background: #333333;
+    background: #333333a2;
     transition: background 0.2s;
     animation:1s ease 2s normal forwards 1 fadein;
     -webkit-animation:1s ease 2s normal forwards 1 fadein;
@@ -93,36 +114,61 @@ to{opacity:1}
    display: flex;
    align-items: center;
    justify-content: center;
+   flex-direction: column;
+   background: #9EFFF5;
 }
 
-.hero h1 {
-    margin-bottom: 25rem;
-    font-size: 2.8rem;
-}
-
-
-.health {
- background-image: url(../sources/background.webp);
+.hero h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
 }
 
 .carousel-item  {
-    padding: 3em;
-    width: 60vw !important;
-    height: 40vh;
-    margin: 50px;
+    padding: 1.5em;
+    width: 70vw !important;
+    height: 70vh;
+    margin: 2.5em;
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    background-color: rgba(173, 54, 54, 0.911);
+    background-color: #e1e1dd;  
+    border: none;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: 'Newsreader', serif;
 }
 
-.carousel-item p {
+.carousel-item  img{
+    margin: 2vw;
+    width: 45vh;
+    float: left;
+    border-radius: 5%;
+    transform-origin: center;
+    object-fit: cover;
+}
+
+.carousel-item  h3 {
+    text-align: center;
+    margin-bottom: 0.8em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.carousel-item  p {
+    font-size: 1em;
+}
+
+.carousel i {
+    margin-left: 48%;
+}
+
+.font-news {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+.flinston {
+    width: 15vw;
+}
