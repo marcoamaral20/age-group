@@ -16,3 +16,44 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems, options);
   });
+
+function myAlert() {
+    alert("Você já está nesta página !");
+}
+
+function myConfirm() {
+    confirm("Pressione OK para alterar de página !")
+}
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(() => {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = minutes + ":" + seconds;
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+window.onload = function () {
+    var duration = 4 * 1; // Converter para segundos
+        display = document.querySelector('#timer'); // selecionando o timer
+    startTimer(duration, display); // iniciando o timer
+};
+
+const img = document.querySelector("#zoom-card");
+
+img.addEventListener("mousemove", () => {
+    img.style.transform = "scale(1.3)";
+})
+
+img.addEventListener("mouseout", () => {
+    img.style.transform = "scale(1)";
+})
+
+function myFunction(x) {
+    x.style.color = "yellow";
+  }

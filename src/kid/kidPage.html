@@ -7,21 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Roboto:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
     <title>M.jore</title>
 
@@ -33,23 +32,23 @@
             <button type="button" class="select-group-button"><i class="fa-solid fa-chevron-down"></i></button>
             <div class="content-header">
                 <div class="age-group">
-                    <a class="link-img" href="../kid/kidPage.html">
+                    <a class="link-img" href="../kid/kidPage.html" onclick="myAlert()">
                         <img src="../sources/kid.png" alt="7 a 12 anos" title="7 a 12 anos">
                         <span>Criança</span>
                     </a>
-                    <a class="link-img" href="../adolescent/adolescentPage.html">
+                    <a class="link-img" href="../adolescent/adolescentPage.html" onclick="myConfirm()">
                         <img src="../sources/adolescent.png" alt="13 a 18 anos" title="13 a 18 anos">
                         <span>Adolescente</span>
                     </a>
-                    <a class="link-img" href="../young/youngPage.html">
+                    <a class="link-img" href="../young/youngPage.html" onclick="myConfirm()">
                         <img src="../sources/young.png" alt="19 a 30 anos" title="19 a 30 anos">
                         <span>Jovem</span>
                     </a>
-                    <a class="link-img" href="../adult/adultPage.html">
+                    <a class="link-img" href="../adult/adultPage.html" onclick="myConfirm()">
                         <img src="../sources/adult.png" alt="31 a 55 anos" title="31 a 55 anos">
                         <span>Adulto</span>
                     </a>
-                    <a class="link-img" href="../old/oldPage.html">
+                    <a class="link-img" href="../old/oldPage.html" onclick="myConfirm()">
                         <img src="../sources/old.png" alt="56 anos ou mais" title="56 anos ou mais">
                         <span>Idoso</span>
                     </a>
@@ -59,26 +58,96 @@
     </header>
     <div class="content-card">
         <div class="hero health parallax">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-keyboard="true">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione facere maiores
-                            distinctio voluptas id commodi illum voluptatum.</p>
+                        <h3>SAÚDE</h3>
+                        <img src="../sources/image-content.jpg.crdownload" alt="image-cartoon" id="zoom-card">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo!Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo!
+                        </p>
                     </div>
                     <div class="carousel-item">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione facere maiores
-                            distinctio voluptas id commodi illum voluptatum. Officia sint deserunt laboriosam recusandae
-                            illum tempora provident odit, similique reprehenderit? Ipsum.</p>
+                        <h3>GERAL </h3>
+                        <img src="../sources/geral-image.jfif" alt="image-cartoon" id="zoom-card">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo!Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo!
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo veniam repellendus
+                                non
+                                ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                                provident quod omnis quaerat nemo!</p>
                     </div>
                     <div class="carousel-item">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione facere maiores
-                            distinctio voluptas id commodi illum voluptatum. Officia sint deserunt laboriosam recusandae
-                            illum tempora provident odit, similique reprehenderit? Ipsum.</p>
+                        <h3>CIÊNCIA E TECNOLOGIA</h3>
+                        <img src="../sources/cie-tec-image.jfif" alt="image-cartoon" id="zoom-card">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo!Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo!
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo veniam repellendus
+                                non
+                                ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                                provident quod omnis quaerat nemo!</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>RECOMENDAÇÕES</h3>
+                        <img src="../sources/61w5LpavFFL._AC_SL1000_.jpg" alt="image-cartoon" id="zoom-card">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo!Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo!
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo veniam repellendus
+                                non
+                                ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                                provident quod omnis quaerat nemo!</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>OUTROS</h3>
+                        <img src="../sources/outros-image.png" alt="image-cartoon" id="zoom-card">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo!Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Maxime quo veniam repellendus non
+                            ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                            provident quod omnis quaerat nemo!
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quo veniam repellendus
+                                non
+                                ipsum dignissimos vitae nihil rem, laboriosam, fugit dolor, ab cum. Aperiam, dignissimos
+                                provident quod omnis quaerat nemo!</p>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -89,8 +158,16 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+                <i id="timer"></i>
             </div>
         </div>
+        <div class="font-news">
+            <a href="https://www.globo.com/"><img src="../sources/Globo.com_logo.svg.png" alt="globo.com" class="flinston"></a>
+            <a href="https://www.globo.com/"><img src="../sources/uol.png" alt="globo.com" class="flinston"></a>
+            <a href="https://www.globo.com/"><img src="../sources/cnn.png" alt="globo.com" class="flinston"></a>
+            <a href="https://www.globo.com/"><img src="../sources/g1.jpg" alt="globo.com" class="flinston"></a>
+        </div>
+    </div>
     </div>
 
     <script src="https://kit.fontawesome.com/d04617cc57.js" crossorigin="anonymous"></script>
