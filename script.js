@@ -38,13 +38,14 @@ function startTimer(duration, display) {
         }
     }, 1000);
 }
-window.onload = function () {
-    var duration = 4 * 1; // Converter para segundos
-        display = document.querySelector('#timer'); // selecionando o timer
+window.onload = function (seg) {
+    seg = 4
+    var duration = seg * 1; // Converter para segundos
+        display = document.querySelector("#timer"); 
     startTimer(duration, display); // iniciando o timer
 };
 
-const img = document.querySelector("#zoom-card");
+const img = document.getElementById("zoom-card");
 
 img.addEventListener("mousemove", () => {
     img.style.transform = "scale(1.3)";
@@ -53,7 +54,3 @@ img.addEventListener("mousemove", () => {
 img.addEventListener("mouseout", () => {
     img.style.transform = "scale(1)";
 })
-
-function myFunction(x) {
-    x.style.color = "yellow";
-  }
